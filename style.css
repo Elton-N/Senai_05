@@ -1,0 +1,87 @@
+ /* Exemplo Estrutura Semântica */
+
+Body{
+
+    font-family: Arial, sans-serif;    /* escolher a fonte */
+    margin: 0;                        /* <!-- Esta propriedade remove todas as margens do elemento--> */ 
+    display: flex;                    /* deixa body flexível */
+    flex-direction: column;           /* header em cima, footer em baixo */
+}
+header, footer {
+    padding: 10px;                           /* espaçamento interno */
+    color: rgb(230, 231, 252);              /* cor d letra*/
+    text-align: center;                     /* Centraliza o título */
+
+}
+
+header { background: #3e8cf2; }          /* cor de fundo*/
+
+footer { background: #0323ef; }              /* cor de fundo*/
+
+nav{ margin: 0 10px;           /* 10px na esquerda; 0 conteudo  e 10px n direita;    topo e  base = 0;  direita e  esquerda = 10 */
+    color: white; 
+    text-decoration: none;}  /* Remove: sublinhado, sobrelinhado, linha cortada, etc. */
+
+      /* Área central: main + aside */
+    
+.conteudo {
+      display: flex;   /* coloca main e aside lado a lado */
+      flex: 1;         /* ocupa o espaço todo */
+    }
+
+main {
+    flex: 3; /* 75% da largura */
+    padding: 20px;
+    }
+
+     aside {
+    flex: 0.3;               /* 25% da largura */
+    background: #e4cfcf;   /* cor de fundo */
+    padding: 20px;               /*  espaçamento interno de 20 pixels em todos os lados do elemento. */
+    border-left: 2px solid #ccc;   /*  cria uma borda esquerda fina e sólida em cinza claro. */
+    }
+
+      section, article {
+      margin-bottom: 15px;
+      padding: 10px;
+      border: 1px solid #edd2d2;
+      background: #f5dede;
+    }
+
+
+    
+    
+    
+    
+    /* TABELA */
+
+    
+    table {
+      width: 80%;                 /* Define que a tabela ocupará 80% da largura da página */
+      border-collapse: collapse;  /* Remove os espaços entre as bordas das células */
+      margin: 20px auto;          /* Centraliza a tabela horizontalmente e adiciona margem em cima/baixo */
+      font-family: Arial, sans-serif; /* Define a fonte usada no conteúdo da tabela */
+}
+
+th, td {
+      border: 1px solid #444;     /* Cria uma borda fina e cinza escura em cada célula */
+      padding: 10px;              /* Espaçamento interno de 10px em cada célula */
+      text-align: center;         /* Centraliza o texto horizontalmente */
+}
+
+th {
+      background-color: #0073e6;  /* Define cor de fundo azul para os cabeçalhos */
+      color: white;               /* Cor da fonte branca nos cabeçalhos */
+}
+
+tr:nth-child(even) {
+      background-color: #f2f2f2;  /* Aplica cor de fundo cinza claro em linhas pares (efeito “zebrado”) */
+}
+
+caption {
+      font-size: 1.5em;           /* Aumenta o tamanho da fonte da legenda da tabela */
+      margin-bottom: 10px;        /* Espaço entre a legenda e a tabela */
+      font-weight: bold;          /* Deixa o texto da legenda em negrito */
+}
+
+   
